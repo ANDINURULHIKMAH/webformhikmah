@@ -1,0 +1,153 @@
+/* Reset default margin and padding for all elements */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body background and text color */
+body {
+    background-color: #efdede;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style the header */
+header {
+    background-image: url('16f03871ce170099c2c235b9db7fb690.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    color: #070000;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Menggunakan Flexbox untuk mengatur posisi elemen-elemen header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007acc;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #080606;
+    text-decoration: none;
+    font-weight: bold;
+}
+form {
+    flex: 1;
+}
+form {
+    width: 700px; /* Lebar maksimum form */
+    margin: 0 auto; /* Memposisikan form di tengah */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left; /* Aligment text diubah menjadi kiri */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-check-label {
+    display: inline;
+    font-weight: normal;
+}
+
+.btn-primary {
+    background-color: #00cc29;
+    color: #010100;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0adb11;
+}
+
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-image: url('16f03871ce170099c2c235b9db7fb690.jpg');
+    color: #060404;
+}
+/* Styles for the popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
